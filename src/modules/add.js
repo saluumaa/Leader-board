@@ -38,5 +38,5 @@ const displayData = () => {
     `;
     tbody.appendChild(rowHolder);
   });
-}
+};
 export default displayData;
