@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 5rem 30% 2rem 30%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  gap: 3rem;
+  font-size: 1rem;
+}
+
+.left-leader {
+  display: flex;
+  flex-direction: column;
+}
+
+.score-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.refresh {
+  padding: 5px 8px;
+}
+
+.scores {
+  border: 2px solid rgb(43, 43, 43);
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+.rowholder {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.rowholder:nth-child(even) {
+  background-color: aqua;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 2rem;
+}
+
+form input {
+  padding: 8px;
+}
+
+.submit {
+  margin-left: 5rem;
+  padding: 8px 10px;
+}
