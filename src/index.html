@@ -8,13 +8,16 @@
 </head>
 <body>
     <h1>Leaderboard</h1>
+    <div class="container">
     <section class="left-leader">
         <div class="score-header">
             <h2>Recent Scores</h2>
-            <p>Refresh</p>
+            <button class="refresh">Refresh</button>
         </div>
         <div class="scores">
-
+            <table>
+                <tbody></tbody>
+            </table>
         </div>
     </section>
     <section class="right-leader">
@@ -22,7 +25,9 @@
         <form>
             <input type="text" placeholder="Your name">
             <input type="text" placeholder="Your score">
+            <button class="submit">Submit</button>
         </form>
     </section>
+</div>
 </body>
 </html>
