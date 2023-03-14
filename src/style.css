@@ -13,7 +13,7 @@ h1 {
   display: flex;
   justify-content: center;
   height: 100vh;
-  gap: 3rem;
+  gap: 5rem;
   font-size: 1rem;
 }
 
@@ -25,7 +25,8 @@ h1 {
 .score-header {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 25px;
+  padding-right: 15px;
 }
 
 .refresh {
@@ -35,18 +36,18 @@ h1 {
 .scores {
   border: 2px solid rgb(43, 43, 43);
   margin-top: 2rem;
+  height: 50%;
+  overflow-y: scroll;
 }
 
-table {
-  width: 100%;
-}
-
-.rowholder {
+.list-scores li {
+  list-style: none;
   padding-bottom: 8px;
   padding-top: 8px;
+  padding-left: 10px;
 }
 
-.rowholder:nth-child(even) {
+ul li:nth-child(even) {
   background-color: aqua;
 }
 
@@ -58,10 +59,17 @@ form {
 }
 
 form input {
-  padding: 8px;
+  padding: 10px 15px;
 }
 
 .submit {
   margin-left: 5rem;
   padding: 8px 10px;
+}
+
+.save {
+  margin-left: 50px;
+  color: green;
+  font-weight: 600;
+  margin-top: 18px;
 }
