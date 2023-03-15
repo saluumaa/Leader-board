@@ -64,7 +64,7 @@ h1::before {
   justify-content: center;
   gap: 8rem;
   font-size: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .left-leader {
@@ -79,12 +79,6 @@ h1::before {
   padding-left: -20px;
 }
 
-
-.refresh {
-  padding: 12px;
-  font-size: 16px;
-}
-
 .scores {
   border: 4px solid darkslategray;
   border-top-left-radius: 30px;
@@ -93,6 +87,7 @@ h1::before {
   margin-bottom: 2rem;
   overflow-y: scroll;
   background-color: #00000090;
+  box-shadow: 3px 2px 4px #00000050;
 }
 
 .list-scores li {
@@ -127,13 +122,44 @@ form input {
 
 .submit {
   margin-left: 8rem;
-  padding: 10px 10px;
+}
+
+.btn {
+  cursor: pointer;
+  color: wheat;
+  position: relative;
+  padding: 12px;
   font-size: 16px;
+  background: none;
+  transition: color 0.4s linear;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #2a5a3b;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+
+.btn:hover::before {
+  transform: scaleX(1);
 }
 
 .save {
   margin-left: 50px;
-  color: green;
+  color: aqua;
   font-weight: 600;
   margin-top: 18px;
 }
