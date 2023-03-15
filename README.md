@@ -60,7 +60,7 @@
 
 ## 🚀 Live Demo <a name="Live-Demo"></a>
 
-- [not available yet]()
+- [Live Demo](https://saluumaa.github.io/Leader-board/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
