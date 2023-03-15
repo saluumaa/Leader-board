@@ -10,6 +10,7 @@ body {
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
 }
+
 .main-wrapper {
   background: linear-gradient(70deg, #2a5a3b, #1e4886);
   border-radius: 40px;
@@ -37,24 +38,27 @@ h1::before {
   content: attr(data-text);
   padding-left: 1rem;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   right: 50%;
   width: 0;
   height: 100%;
   color: #1e4886;
-  -webkit-text-stroke: 0vw #383d52;
+  -webkit-text-stroke: 0 #383d52;
   border-right: 1px solid #1e4886;
   animation: main 8s linear infinite;
   overflow: hidden;
 }
 
 @keyframes main {
-  0%,10%,100%{
+  0%,
+  10%,
+  100% {
     width: 0;
   }
 
-  70%, 90% {
+  70%,
+  90% {
     width: 100%;
   }
 }
@@ -136,7 +140,7 @@ form input {
   padding: 12px;
   font-size: 16px;
   background: none;
-  transition: color 1s ease linear;
+  transition: 1.5s ease;
 }
 
 .btn:hover {
@@ -153,7 +157,7 @@ form input {
   height: 100%;
   background: #2a5a3b;
   z-index: -1;
-  transition: transform 0.5s;
+  transition: transform 0.9s;
   transform-origin: 0 0;
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
   transform: scaleX(0);
