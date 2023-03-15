@@ -1,6 +1,6 @@
 /* eslit-disable import/no-cycle */
-import { apiUrls } from './getData';
-import refreshData from './refreshScore';
+import { apiUrls } from './getData.js';
+import refreshData from './refreshScore.js';
 
 const nameInput = document.getElementById('user');
 const scoreInput = document.getElementById('score');
