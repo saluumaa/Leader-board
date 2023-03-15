@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Monoton&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500&display=swap" rel="stylesheet">
     <title>Leaderboard</title>
 <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
 <body>
-    <h1>Leaderboard</h1>
+    <div class="main-wrapper">
+    <h1 data-text="Leaderboard...">Leaderboard...</h1>
     <main class="container">
     <section class="left-leader">
         <div class="score-header">
             <h2>Recent Scores</h2>
-            <button type="button" class="refresh">Refresh</button>
+            <button type="button" class="refresh btn">Refresh</button>
         </div>
         <div class="scores">
            <ul class="list-scores"></ul>
@@ -23,10 +25,11 @@
         <form>
             <input type="text" placeholder="Your name" id="user">
             <input type="number" placeholder="Your score" id="score">
-            <button type="submit" class="submit">Submit</button>
+            <button type="submit" class="submit btn">Submit</button>
         </form>
         <p class="save"></p>
     </section>
 </main>
+</div>
 </body>
 </html>

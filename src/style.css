@@ -4,17 +4,67 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: darkslategray;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+.main-wrapper {
+  background: linear-gradient(70deg, #2a5a3b, #1e4886);
+  border-radius: 40px;
+  width: 70%;
+  height: 75%;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: whitesmoke;
+  box-shadow: 2px 4px 2px #1e488699;
+}
+
 h1 {
-  font-size: 2rem;
-  margin: 5rem 30% 2rem 30%;
+  position: relative;
+  font-size: 4rem;
+  color: #2a5a3b;
+  padding-left: 1rem;
+  letter-spacing: 0.1em;
+  -webkit-text-stroke: 0.3vw #f0f2f6;
+  text-transform: uppercase;
+}
+
+h1::before {
+  content: attr(data-text);
+  padding-left: 1rem;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 50%;
+  width: 0;
+  height: 100%;
+  color: #1e4886;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #1e4886;
+  animation: main 8s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes main {
+  0%,10%,100%{
+    width: 0;
+  }
+
+  70%, 90% {
+    width: 100%;
+  }
 }
 
 .container {
   display: flex;
   justify-content: center;
-  height: 100vh;
-  gap: 5rem;
+  gap: 8rem;
   font-size: 1rem;
+  margin-top: 2rem;
 }
 
 .left-leader {
@@ -25,19 +75,24 @@ h1 {
 .score-header {
   display: flex;
   align-items: center;
-  gap: 25px;
-  padding-right: 15px;
+  gap: 12rem;
+  padding-left: -20px;
 }
 
+
 .refresh {
-  padding: 5px 8px;
+  padding: 12px;
+  font-size: 16px;
 }
 
 .scores {
-  border: 2px solid rgb(43, 43, 43);
+  border: 4px solid darkslategray;
+  border-top-left-radius: 30px;
   margin-top: 2rem;
-  height: 50%;
+  height: 35%;
+  margin-bottom: 2rem;
   overflow-y: scroll;
+  background-color: #00000090;
 }
 
 .list-scores li {
@@ -45,10 +100,16 @@ h1 {
   padding-bottom: 8px;
   padding-top: 8px;
   padding-left: 10px;
+  font-size: 17px;
 }
 
 ul li:nth-child(even) {
-  background-color: aqua;
+  background-color: darkslategray;
+  transition: 1s ease;
+}
+
+ul li:nth-child(even):hover {
+  transform: scale(1.1);
 }
 
 form {
@@ -59,12 +120,15 @@ form {
 }
 
 form input {
-  padding: 10px 15px;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 .submit {
-  margin-left: 5rem;
-  padding: 8px 10px;
+  margin-left: 8rem;
+  padding: 10px 10px;
+  font-size: 16px;
 }
 
 .save {
