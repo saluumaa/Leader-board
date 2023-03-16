@@ -14,20 +14,17 @@ body {
 .main-wrapper {
   background: linear-gradient(70deg, #2a5a3b, #1e4886);
   border-radius: 40px;
-  width: 70%;
-  height: 75%;
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+  display: grid;
   color: whitesmoke;
+  width: 100%;
   box-shadow: 2px 4px 2px #1e488699;
 }
 
 h1 {
   position: relative;
-  font-size: 4rem;
+  font-size: 1.5rem;
   color: #2a5a3b;
+  padding-top: 1rem;
   padding-left: 1rem;
   letter-spacing: 0.1em;
   -webkit-text-stroke: 0.3vw wheat;
@@ -38,6 +35,7 @@ h1::before {
   content: attr(data-text);
   padding-left: 1rem;
   position: absolute;
+  padding-top: 1rem;
   top: 0;
   left: 0;
   right: 50%;
@@ -72,29 +70,32 @@ h2 {
 .container {
   display: flex;
   justify-content: center;
-  gap: 8rem;
+  flex-direction: column-reverse;
+  gap: 2rem;
   font-size: 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .left-leader {
   display: flex;
   flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .score-header {
   display: flex;
   align-items: center;
-  gap: 12rem;
+  gap: 2rem;
 }
 
 .scores {
   border: 4px solid darkslategray;
   border-top-left-radius: 30px;
   margin-top: 2rem;
-  max-height: 25%;
-  margin-bottom: 2rem;
-  overflow-y: scroll;
+  max-height: 20%;
+  margin-bottom: 4rem;
+  overflow: scroll;
   background-color: #00000090;
   box-shadow: 3px 2px 4px #00000050;
 }
@@ -119,8 +120,10 @@ ul li:nth-child(even):hover {
 form {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  margin-top: 38px;
+  gap: 10px;
+  margin-top: 15px;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 form input {
@@ -130,7 +133,7 @@ form input {
 }
 
 .submit {
-  margin-left: 8rem;
+  margin-left: 10rem;
 }
 
 .btn {
@@ -172,4 +175,76 @@ form input {
   color: aqua;
   font-weight: 600;
   margin-top: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-wrapper {
+    width: 100%;
+    height: 80%;
+    top: 10%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .score-header {
+    gap: 12rem;
+  }
+
+  .scores {
+    margin-bottom: 2rem;
+    max-height: 25%;
+  }
+
+  .submit {
+    margin-left: 8rem;
+  }
+
+  form {
+    gap: 18px;
+    margin-top: 38px;
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1205px) {
+  .main-wrapper {
+    width: 70%;
+  }
+
+  .container {
+    gap: 8rem;
+  }
+
+  .scores {
+    margin-bottom: 2rem;
+    max-height: 25%;
+  }
+
+  .score-header {
+    gap: 12rem;
+  }
+
+  .submit {
+    margin-left: 8rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  form {
+    gap: 18px;
+    margin-top: 38px;
+    margin-right: 2rem;
+  }
 }
