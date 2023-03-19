@@ -30,7 +30,7 @@
 
 # 📖 [Leaderboard] <a name="about-project"></a>
 
->To do list application helps you to manage your daily task effectively and let you reserve your schedule and daily plan.
+>To do list application helps you to manage your daily task effectively and let you reserve your schedule and daily plan!
 
 **[Leaderboard project]** 
 
@@ -126,7 +126,7 @@ npx eslint .                        to check error for javascript
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](../../issues/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
