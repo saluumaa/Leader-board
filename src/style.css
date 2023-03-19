@@ -14,9 +14,10 @@ body {
 .main-wrapper {
   background: linear-gradient(70deg, #2a5a3b, #1e4886);
   border-radius: 40px;
-  display: grid;
+  display: block;
   color: whitesmoke;
   width: 100%;
+  height: 100vh;
   box-shadow: 2px 4px 2px #1e488699;
 }
 
@@ -65,6 +66,7 @@ h2 {
   font-size: 2rem;
   font-weight: 600;
   color: wheat;
+  padding-left: 15px;
 }
 
 .container {
@@ -91,9 +93,11 @@ h2 {
 
 .scores {
   border: 4px solid darkslategray;
+  position: fixed;
+  top: 27rem;
+  width: 80%;
   border-top-left-radius: 30px;
-  margin-top: 2rem;
-  max-height: 20%;
+  height: 30%;
   margin-bottom: 4rem;
   overflow: scroll;
   background-color: #00000090;
@@ -105,7 +109,7 @@ h2 {
   padding-bottom: 8px;
   padding-top: 8px;
   padding-left: 10px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 ul li:nth-child(even) {
@@ -202,7 +206,9 @@ form input {
 
   .scores {
     margin-bottom: 2rem;
-    max-height: 25%;
+    height: 40%;
+    top: 13rem;
+    width: 50%;
   }
 
   .submit {
@@ -218,16 +224,24 @@ form input {
 
 @media only screen and (min-width: 1205px) {
   .main-wrapper {
-    width: 70%;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .container {
+    flex-direction: row;
     gap: 8rem;
   }
 
   .scores {
     margin-bottom: 2rem;
-    max-height: 25%;
+    height: 40%;
+    top: 13rem;
+    width: 50%;
   }
 
   .score-header {
