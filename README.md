@@ -30,7 +30,7 @@
 
 # 📖 [Leaderboard] <a name="about-project"></a>
 
->To do list application helps you to manage your daily task effectively and let you reserve your schedule and daily plan!
+>Leaderboard is an API that allows you to post your score and see the scores of other players.
 
 **[Leaderboard project]** 
 
@@ -54,6 +54,8 @@
 - **[Git Flow execution]**
  
 - **[Implement webpack]**
+  
+- **[Implement API]**
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
