@@ -30,7 +30,7 @@
 
 # 📖 [Leaderboard] <a name="about-project"></a>
 
->Leaderboard is an API that allows you to post your score and see the scores of other players.
+>The leaderboard is built with an API and allows you to post your score and see the scores of other players.
 
 **[Leaderboard project]** 
 
@@ -81,7 +81,7 @@ Use Terminal:
  
 cd my-folder
  
-git clone git@github.com:saluumaa/Saluma-s-Portfolio.git
+git clone git@github.com:saluumaa/Leader-board.git
 
 ### Install
 
@@ -120,6 +120,7 @@ npx eslint .                        to check error for javascript
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[send and recieve data using API]**
+- [ ] **[delete players]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
