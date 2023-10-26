@@ -78,31 +78,32 @@ In order to run this project you need:
 
 Clone this repository to your desired folder: 
 Use Terminal:
- 
-cd my-folder
- 
-git clone git@github.com:saluumaa/Leader-board.git
 
+```sh
+cd my-folder
+git clone git@github.com:saluumaa/Leader-board.git
+```
 ### Install
 
 Install this project with:
-**
+```sh
 cd my-project
  
 npm install
-**
+```
 
 ### Run tests
 
 To run tests, run the following command:
- 
+
+```sh
 Npx hint .   for testing the html file errors
  
 npx stylelint "**/*.{css,scss}"     to check errors for CSS file.
 
 npx eslint .                        to check error for javascript
 
-
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 
